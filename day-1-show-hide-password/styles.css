@@ -1,0 +1,110 @@
+:root {
+  --java: #26c9c3;
+  --dark-blue: #191349;
+}
+
+.input-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  z-index: 2;
+  padding: 16px;
+  background-color: var(--java);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.show.input-field {
+  color: var(--java);
+}
+
+.lock-icon {
+  z-index: 2;
+}
+
+.lock-icon svg {
+  width: 24px;
+}
+
+.dark-icon path {
+  color: var(--dark-blue);
+}
+
+.java-icon path {
+  color: var(--java);
+}
+
+.eye-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--dark-blue);
+  position: relative;
+}
+
+.eye-box::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  background-color: var(--dark-blue);
+  width: 48px;
+  height: 48px;
+  top: 0px;
+  bottom: 0px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.eye-box.show::after {
+  transform: scale(26);
+}
+
+.eye-icon__svg {
+  width: 36px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  overflow: visible;
+  transform: translate(-50%, -50%);
+}
+
+.eye-icon__svg path {
+  color: var(--java);
+}
+
+.input-field {
+  background-color: transparent;
+  color: var(--dark-blue);
+  font-family: monospace;
+  border: none;
+  padding: 8px;
+  border-left: 1px solid white;
+  font-size: 16px;
+  z-index: 2;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+.eyelid {
+  transition: all 0.15s ease-in-out;
+}
+
+.show .eyelid {
+  transform: scaleY(-1);
+  transform-origin: 100px 70px;
+}
+
+.pupil {
+  clip-path: ellipse(30px 20px at 13px 14px);
+  transition: all 0.15s ease-in-out;
+}
+.show .pupil {
+  clip-path: ellipse(30px 20px at 17px 57px);
+  transform: translateY(5px);
+}
