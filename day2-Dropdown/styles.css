@@ -1,0 +1,19 @@
+.dropdown {
+}
+.label-text {
+  transition: all 0.3s ease-in-out;
+}
+
+.open {
+  transition: all 0.3s ease-in-out;
+}
+
+.open .label-text {
+  transform: translate(-60px, -90px) scale(0.9);
+}
+
+.dropdown-items-box {
+  position: absolute;
+
+  top: 160px;
+}
