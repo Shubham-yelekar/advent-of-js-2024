@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Slugify the Tilte</title>
+  </head>
+  <body
+    class="bg-slate-100 text-slate-800 margin-0 min-h-screen flex items-center justify-center"
+  >
+    <div class="flex flex-col w-[300px] " >
+      <div class="bg-slate-200 p-3 flex flex-col text-blue-800 rounded-md focus-within:border-2 focus-within:border-blue-500">
+        <label class="" for="title">Title</label>
+        <input id="title_input" class="bg-transparent text-2xl focus:outline-none" name="title" type="text" >
+      </div>
+
+      <div id="slug_output"></div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

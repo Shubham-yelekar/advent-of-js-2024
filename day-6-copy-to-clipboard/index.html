@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Copy to clipboard</title>
+  </head>
+  <body
+    class="bg-slate-100 text-slate-800 margin-0 min-h-screen flex items-center justify-center"
+  >
+    <div class="text-field">
+      <input
+        type="text"
+        class="input"
+        id="input"
+        value="https://www.example.com"
+      />
+      <button class="button" id="copy_button">
+        <img width="100%" height="100%" src="./assets/clipboard.png" id="button_icon"></img>
+        <div class="tool-tip">
+          <span class="tool-tip-text">copy</span>
+        </div>
+      </button>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
