@@ -1,0 +1,11 @@
+body {
+  cursor: none;
+  overflow: hidden;
+}
+.rounded{
+  position: fixed;
+  font-size: 128px;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}

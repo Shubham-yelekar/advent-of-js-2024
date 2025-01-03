@@ -7,7 +7,7 @@ word.addEventListener('mouseover', ()=>{
     const interval = setInterval(() => {
         word.innerText  = word.innerText
        .split('')
-       .map((letter, index)=>{ 
+       .map((letter, index)=>{
         if(index < iterations) {
             return word.dataset.text[index]
         }
